@@ -1,5 +1,4 @@
 package com.codewithmosh;
 
-public class Game {
-
+public class Yahtzee {
 }

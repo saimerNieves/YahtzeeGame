@@ -49,10 +49,10 @@ public class Cup {
 
     }
 
-    public List<Integer> parseSelections(String input){
+    public ArrayList<Integer> parseSelections(String input){
         String[] inputArr = input.split(" ");
 
-        List<Integer> selections = new ArrayList<>();
+        ArrayList<Integer> selections = new ArrayList<>();
         for (String number: inputArr){
             selections.add(Integer.parseInt(number) -1);
 
