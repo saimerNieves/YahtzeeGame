@@ -28,6 +28,10 @@ public class Main {
 
 
 
+        //TODO - HOMEWORK > turn code into a yahtzee class and updated the high low a little but a little nicer
+        //TODO - Add classes to high low and methods to the highlow game
+
+
 
 
 
