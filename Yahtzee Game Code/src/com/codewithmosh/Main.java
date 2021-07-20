@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class Main {
 
+    //ToDO Create a class to hold all this information
     public static void main(String[] args) {
         // write your code here
 
