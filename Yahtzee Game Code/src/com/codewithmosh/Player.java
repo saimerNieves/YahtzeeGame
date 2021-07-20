@@ -11,10 +11,12 @@ public class Player {
         isWrong = false;
     }
 
+    //Your eyes looking your answer
     public void changeisWrong(boolean isWrong){
         this.isWrong = isWrong;
     }
 
+    //Your brain
     public void increaseTimesCorrect(){
         this.timesCorrect++;
     }

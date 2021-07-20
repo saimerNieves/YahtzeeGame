@@ -1,72 +1,33 @@
 package com.codewithmosh;
 
+import HighLow.HIghLow;
+
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        // write your code here
 
-        Player saimer = new Player();
+        Cup myCup = new Cup(); //Created the new cup in the factory
 
         Scanner scanner = new Scanner(System.in);
+        String input;
 
-        Die die1 = new Die();
-        Die die2 = new Die();
-
-        //First ROll of DIce
-        die1.rollDie();
-        die2.rollDie();
-
-        int die_Total = die1.face_Up_Value + die2.face_Up_Value;
-
-        System.out.println( die1.face_Up_Value + " + " + die2.face_Up_Value + " = "  + (die_Total) );
+        myCup.roll();
+        System.out.println(myCup.displayCup());
+        System.out.println("Select die to rerll  you want to re-roll 1-5?");
+        input = scanner.nextLine();
+        myCup.roll(myCup.parseSelections(input));
 
 
 
-        while (saimer.isWrong == false) {
 
 
-            //Asking User for input
-
-            System.out.println("Will the next number be (h)igher, (l)ower , or (e)qual");
-
-            String answer = scanner.next();
 
 
-            //Second Roll of Dice
-
-            die1.rollDie();
-            die2.rollDie();
-
-            int die_Total2 = die1.face_Up_Value + die2.face_Up_Value;
-
-
-            //Determine your answer
-
-
-            if ((die_Total < die_Total2) && (answer.equals("h"))) {
-                System.out.println("you got the right answer");
-                saimer.increaseTimesCorrect();
-            } else if ((die_Total > die_Total2) && (answer.equals("l"))) {
-                System.out.println("you got the right answer");
-                saimer.increaseTimesCorrect();
-            } else if ((die_Total == die_Total2) && (answer.equals("e"))) {
-                System.out.println("you got the right answer");
-                saimer.increaseTimesCorrect();
-            } else {
-                System.out.println("you got the wrong answer");
-                saimer.changeisWrong(true);
-            }
-
-            System.out.println(die1.face_Up_Value + " + " + die2.face_Up_Value + " = " + (die_Total2));
-
-        }
-
-        System.out.println("\n\n Your score correct is : " + saimer.timesCorrect);
-        scanner.close();
 
 
     }
-
 }
