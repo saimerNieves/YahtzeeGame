@@ -20,6 +20,7 @@ public class Main {
         System.out.println(myCup.displayCup());
         System.out.println("Select die to rerll  you want to re-roll 1-5?");
         input = scanner.nextLine();
+        //TODO finish up this inclass session since is not complete
         myCup.roll(myCup.parseSelections(input));
 
 
