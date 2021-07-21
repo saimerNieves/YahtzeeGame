@@ -33,7 +33,7 @@ public class Yahtzee {
 
     }
 
-    //TODO -> rafactor turn to update the score for the player and display round score
+    //TODO -> Refactor turn to update the score for the player and display round score *(and total score)
     public void turn(){
 
         player.cup.roll();
