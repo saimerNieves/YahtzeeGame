@@ -2,22 +2,32 @@ package com.codewithmosh;
 
 public class Player {
 
-    public boolean isWrong;
-    public int timesCorrect = 0;
+    //Fields
+    public String name; //Player Name
+    public Cup cup = new Cup(); //Player Cup
+    public int score = 0;
 
+    //Constructor
+    public Player(String name){
 
-    public Player(){
-
-        isWrong = false;
+        this.name = name;
     }
 
-    //Your eyes looking your answer
-    public void changeisWrong(boolean isWrong){
-        this.isWrong = isWrong;
+    public int updateScore() {
+        int roundScore = 0;
+
+        for(Die die : cup.dieArrayList){
+            score += die.face_Up_Value;
+        }
+
+        score += roundScore;
+        return roundScore;
     }
 
-    //Your brain
-    public void increaseTimesCorrect(){
-        this.timesCorrect++;
-    }
+
+
+
+
+
+    //Methods
 }
