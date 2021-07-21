@@ -18,7 +18,7 @@ public class Yahtzee {
         
     }
 
-    
+    //TODO -> Refactor play method to run 5 turns instead of 1 , then display total score for the game
     public void play(){
         turn();
     }
@@ -33,7 +33,7 @@ public class Yahtzee {
 
     }
 
-    //TODO -> rafactor turn to update the score for the player
+    //TODO -> rafactor turn to update the score for the player and display round score
     public void turn(){
 
         player.cup.roll();
