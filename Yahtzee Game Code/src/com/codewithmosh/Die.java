@@ -11,7 +11,7 @@ public class Die {
     //OverRiding is the changes made from one object method to another => toString()
     //gets the location of the reference in the MEMORY and returns it for you
     //constructors
-
+    //Todo Fix Die class
     //default Constructor
     public Die(){
         this.number_Of_Sides = 6;
