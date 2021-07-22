@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Yahtzee {
 
+    //TODO adjust fields
     public Cup cup = new Cup(); //Created the new cup in the factory
     public Player player;
     private final Scanner scanner = new Scanner(System.in);
