@@ -2,6 +2,7 @@ package com.codewithmosh;
 
 public class Die {
 
+    //Come back and do all CareerDevs work
     //fields
     public int number_Of_Sides; // int but less sizes
     public int face_Up_Value; // value of the face Up
