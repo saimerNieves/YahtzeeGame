@@ -10,6 +10,7 @@ public class Yahtzee {
     private final Scanner scanner = new Scanner(System.in);
     
 
+    //TODO finish yahtzee class
     public Yahtzee(){
 
         System.out.println("Whats your name?");
